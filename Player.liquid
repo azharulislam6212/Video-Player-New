@@ -66,3 +66,82 @@
 </div>
 
 </div>
+
+
+
+
+//block schmea
+
+
+    {
+      "type": "video",
+      "name": "Vide Action",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Video"
+        },
+        {
+          "type": "select",
+          "id": "video_source",
+          "label": "Video Source",
+          "default": "video_external",
+          "options": [
+            {
+              "value": "video_external",
+              "label": "Video External"
+            },
+            {
+              "value": "video_hosted",
+           "label": "Video Hosted"
+            }
+          ]
+        },
+        {
+          "type": "video_url",
+          "id": "video",
+          "accept": ["youtube", "vimeo"],
+          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+          "label": "External Video"
+        },
+        {
+          "type": "video",
+          "id": "video_hosted",
+            "label": "Hoseted Video"
+        },
+        {
+          "type": "select",
+          "label": "Video Size",
+          "id": "video_ratio",
+          "options": [
+            {
+              "value": "4/3",
+              "label": "4:3"
+            },
+            {
+              "value": "16/9",
+              "label": "16:9"
+            },
+            {
+              "value": "1",
+              "label": "1"
+            },
+            {
+              "value": "3/5",
+              "label": "3:5"
+            },
+            {
+              "value": "4/5",
+              "label": "4:5"
+            }
+          ],
+          "default": "16/9"
+        },
+        {
+          "type": "image_picker",
+          "id": "video_thumbnail",
+          "label": "Video Thumbnail"
+        }
+      ]
+    }
